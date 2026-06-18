@@ -4,26 +4,32 @@ This is an Android application developed using Java and Firebase. The applicatio
 
 ## 🚀 Features
 
-- 📁 Select an image from the gallery
-- 👀 Preview selected image
-- ☁️ Upload image to Firebase Storage
-- 💾 Save image details to Firebase Firestore
-- 🔗 Display image download URL
-- 🖼️ Automatically display the latest uploaded image
-- 📅 Show upload date and time
-- 📊 Upload progress indicator
-- ⚠️ Error handling and success messages
+- ✅ Select image from gallery
+- ✅ Upload image to Firebase Firestore (No Firebase Storage required!)
+- ✅ Images stored as Base64 strings
+- ✅ Display latest uploaded image
+- ✅ Progress bar for upload status
+- ✅ No external hosting services needed (ImgBB, Cloudinary, etc.)
+- ✅ Works with Firestore free tier (1MB document limit)
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Java
-- Android Studio
-- Firebase Storage
-- Firebase Firestore
-- Glide Image Library
-- ConstraintLayout
+- **Android Studio** - IDE
+- **Java** - Programming Language
+- **Firebase Firestore** - NoSQL Database
+
+---
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have:
+
+1. **Android Studio** installed
+2. **Firebase Account** (free tier works!)
+3. **Firebase Project** created
+4. **google-services.json** file downloaded
 
 ---
 
@@ -36,23 +42,17 @@ Select Image
 Preview Image
       │
       ▼
-Upload to Firebase Storage
-      │
-      ▼
-Get Download URL
-      │
-      ▼
 Save Details in Firestore
       │
       ▼
 Display Image + Name + URL + Upload Time
-```
+
 
 ---
 
 ## 📊 Firestore Structure
 
-```
+
 ImageInfo
 │
 ├── documentID
@@ -62,12 +62,9 @@ ImageInfo
 │     └── timestamp
 ```
 
----
 
-## 📦 Dependencies
 
-- Firebase Firestore
-- Glide
+
 
 
 
